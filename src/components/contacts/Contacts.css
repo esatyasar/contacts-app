@@ -1,0 +1,13 @@
+*{
+    border: 1px solid black;
+}
+
+.main-container{
+    width: 30%;
+    height: 80%;
+}
+
+.header{
+    text-align: center;
+    color: darkslategray;
+}

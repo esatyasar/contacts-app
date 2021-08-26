@@ -1,0 +1,21 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.phone-container,
+.name-container{
+    width: 90%;
+    height: 2rem;
+    margin-top: 1rem;
+    /* border:none;
+    outline: none; */
+}
+
+.btn-container{
+    margin-top: 2rem;
+}
+
