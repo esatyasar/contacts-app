@@ -8,9 +8,12 @@
 input{
     width: 90%;
     height: 2rem;
-    margin: auto;
+    margin:auto;
     border:none;
     outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  
 }
 
 ul{
@@ -28,4 +31,19 @@ ul li{
     height: 2rem;
     text-decoration: none;
     list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #59c8d4;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+ul li span{
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+
+.filter-text{
+    font-size: 1.2rem;
+    color:rgb(35, 63, 63);
 }

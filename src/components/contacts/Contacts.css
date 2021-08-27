@@ -1,13 +1,13 @@
-*{
-    border: 1px solid black;
-}
+
 
 .main-container{
     width: 30%;
     height: 80%;
+    background-color: #fc7268;
+    border-radius: 25px;
 }
 
 .header{
     text-align: center;
-    color: darkslategray;
+    color: rgb(35, 63, 63);
 }

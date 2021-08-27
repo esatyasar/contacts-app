@@ -14,15 +14,15 @@ function List({contacts}) {
 
     return (
         <div className="filter-container">
-            <input onChange = {(e) =>{
+            <input className="filter-text" onChange = {(e) =>{
                 setFilterText(e.target.value)
                 
             }} type="text" name="filter" id="filter" value = {filterText} placeholder="filter"/>
             <ul>
                 {filtered.map((contacts,index) =>
                 <li className="list" key={index}>
-                    <span>{contacts.fullName}</span>
-                    <span>{contacts.phoneNumber}</span>
+                    <span >{contacts.fullName}</span>
+                    <span >{contacts.phoneNumber}</span>
                 </li>
                 )}
             </ul>
