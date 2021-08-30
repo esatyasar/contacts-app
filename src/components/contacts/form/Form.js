@@ -1,10 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import "./Form.css"
 
-function Form({contacts, setContacts}) {
-    const initialFormValues = {fullName:"", phoneNumber:""};
-    const [form,setForm] = useState(initialFormValues);
-
+function Form({setForm, form, contacts, setContacts, counter, setCounter}) {
+    
     const onChangeName= (e) =>{
         setForm({...form, [e.target.name]:e.target.value})
     }
@@ -14,7 +12,7 @@ function Form({contacts, setContacts}) {
     }
 
     useEffect(() => {
-        setForm(initialFormValues)
+        setForm({fullName:"", phoneNumber:""})
     }, [contacts])
 
     const err = document.querySelector("#err")
@@ -24,8 +22,9 @@ function Form({contacts, setContacts}) {
         if (!regex.test(phone)) {
             err.innerHTML= "Invalid international phone number"
             } else {
-            setContacts([...contacts, form]);
+            setContacts ([...contacts, form]);
             err.innerHTML = "";
+            setCounter(counter+1)
         }
     }
 
@@ -37,9 +36,11 @@ function Form({contacts, setContacts}) {
             validate(form.phoneNumber);
         }
     }
+
     return (
         <div>
             <form className="form-container" action="#" onSubmit = {onSubmitBtn}>
+
                 <div className="name-container">
                     <input className="form-input" onChange = {onChangeName} type="text" name="fullName" id="fullName" value={form.fullName} placeholder="Fullname"/>
                 </div>

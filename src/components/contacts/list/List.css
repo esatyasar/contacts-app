@@ -44,6 +44,22 @@ ul li span{
 }
 
 .filter-text{
+   
     font-size: 1.2rem;
     color:rgb(35, 63, 63);
+}
+
+.number-trash{
+    position: relative;
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.far{
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    cursor: pointer;
+    color: yellow;
 }

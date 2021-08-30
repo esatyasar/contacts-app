@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./List.css"
 
-function List({contacts}) {
+function List({contacts, handleRemove}) {
     const [filterText,setFilterText] = useState("");
     const filtered = contacts.filter((item) => {
         return Object.keys(item).some((key) => 
@@ -11,6 +11,8 @@ function List({contacts}) {
             .includes(filterText.toLocaleLowerCase()) 
         )
     });
+
+    
 
     return (
         <div className="filter-container">
@@ -22,7 +24,7 @@ function List({contacts}) {
                 {filtered.map((contacts,index) =>
                 <li className="list" key={index}>
                     <span >{contacts.fullName}</span>
-                    <span >{contacts.phoneNumber}</span>
+                    <span className="number-trash" >{contacts.phoneNumber}<i  onClick={() => handleRemove(contacts.phoneNumber)} class="far fa-trash-alt"></i></span>
                 </li>
                 )}
             </ul>
