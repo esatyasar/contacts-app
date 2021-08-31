@@ -18,7 +18,7 @@ function Form({setForm, form, contacts, setContacts, counter, setCounter}) {
     const err = document.querySelector("#err")
     
     function validate(phone) {
-        var regex = /[0]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}/;
+        var regex = /[0]{1}[0-9]{10}/;
         if (!regex.test(phone)) {
             err.innerHTML= "Invalid international phone number"
             } else {
