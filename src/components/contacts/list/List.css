@@ -51,7 +51,7 @@ ul li span{
 
 .number-trash{
     position: relative;
-    width:35%;
+    width:40%;
     display: flex;
     justify-content: space-between;
 }
@@ -62,4 +62,10 @@ ul li span{
     top: 5px;
     cursor: pointer;
     color: yellow;
+}
+
+@media screen and (max-width:400px) {
+    input, .filter-text{
+        font-size: 1rem;
+    }
 }

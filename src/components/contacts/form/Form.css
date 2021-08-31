@@ -51,4 +51,9 @@
     .btn-container{ 
         width: 50%;
     }
+    #err,
+    .btn,
+    .form-input{
+        font-size: 1rem;
+    }
 }
