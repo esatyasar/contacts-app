@@ -51,7 +51,7 @@ ul li span{
 
 .number-trash{
     position: relative;
-    width:30%;
+    width:35%;
     display: flex;
     justify-content: space-between;
 }
