@@ -8,9 +8,17 @@ background: -moz-linear-gradient(top, #52E6B1 0%, #428F6B 50%, #19806B 100%);
 background: -webkit-linear-gradient(top, #52E6B1 0%, #428F6B 50%, #19806B 100%);
 background: linear-gradient(to bottom, #52E6B1 0%, #428F6B 50%, #19806B 100%);
     border-radius: 25px;
+    min-width: 400px;
 }
 
 .header{
     text-align: center;
     color: rgb(35, 63, 63);
+}
+
+@media screen and (max-width:400px) {
+    .main-container{
+        width: 90%;
+        min-width: 0px;
+    }
 }

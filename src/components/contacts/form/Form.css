@@ -47,3 +47,8 @@
     color:#D3212D;
 }
 
+@media screen and (max-width:300px) {
+    .btn-container{ 
+        width: 50%;
+    }
+}
